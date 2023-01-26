@@ -1,0 +1,78 @@
+html {
+    font-size: 62.5%; // 1rem is 10px
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    font-family: 'montserrat';
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: normal;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.app {
+    margin-top: 2rem;
+    display: grid;
+    justify-items: center;
+}
+
+.action-items-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+
+    .action-items-content-wrapper {
+        text-align: center;
+        width: 100%;
+
+        .action-items-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            width: 100%;
+        }
+    }
+}
+
+.review-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10fr 2fr;
+    align-items: center;
+
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.summary-wrapper {
+    grid-column: 3;
+}
+
+.test-prompt-wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    textarea {
+        width: 50%;
+        height: 100px;
+        resize: none;
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
